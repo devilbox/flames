@@ -1,0 +1,33 @@
+
+################################################################################
+###
+### 11. Selenium
+###
+################################################################################
+
+###
+### Choose Selenium Server Image
+###
+#SELENIUM_SERVER=3.14.0-p20
+#SELENIUM_SERVER=3.14.0-p21
+#SELENIUM_SERVER=3.14.0-p22
+#SELENIUM_SERVER=3.14.0-p23
+SELENIUM_SERVER=latest
+
+###
+### Expose Selenium Hub Name to Host
+###
+HOST_NAME_SELENIUM=selenium-hub
+
+###
+### Expose Selenium Port to Host
+###
+HOST_PORT_SELENIUM=4444
+HOST_VNC_CHROME_SELENIUM=5902
+HOST_NOVNC_CHROME_SELENIUM=6082
+
+###
+### Set custom screen size at docker run time
+###
+SELENIUM_CLIENT_SCREEN_WIDTH=1920
+SELENIUM_CLIENT_SCREEN_HEIGHT=1080

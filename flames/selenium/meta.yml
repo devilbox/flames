@@ -1,0 +1,11 @@
+---
+
+devilbox_info:
+    name: selenium
+    description: some more detailed description about the module
+    author: "Laurent Laville"
+    github: llaville
+    license: MIT
+    min_devilbox_version: v1.0.1
+    tags:
+        - selenium

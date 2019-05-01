@@ -1,0 +1,52 @@
+version: '2.1'
+
+services:
+
+    selenium-hub:
+        image: elgalu/selenium:${SELENIUM_SERVER:-latest}
+        hostname: ${HOST_NAME_SELENIUM:-selenium-hub}
+        ports:
+            - "${LOCAL_LISTEN_ADDR}${HOST_PORT_SELENIUM:-4444}:4444"
+        networks:
+            app_net:
+                ipv4_address: 172.16.238.150
+        volumes:
+            - /dev/shm:/dev/shm
+        privileged: true
+        environment:
+            - SELENIUM_HUB_HOST=${HOST_NAME_SELENIUM:-selenium-hub}
+            - SELENIUM_HUB_PORT=${HOST_PORT_SELENIUM:-4444}
+            - GRID=true
+            - CHROME=false
+            - FIREFOX=false
+        depends_on:
+            - bind
+            - httpd
+
+    selenium-chrome:
+        image: elgalu/selenium:${SELENIUM_SERVER:-latest}
+        ports:
+            # VNC: See what's going on by connecting your VNC client to 0.0.0.0:5900
+            - "${LOCAL_LISTEN_ADDR}${HOST_VNC_CHROME_SELENIUM:-5902}:25900"
+            # noVNC: See what's going on by hitting http://0.0.0.0:6080 in your browser
+            #        Important: http://127.0.0.1:6080 works but http://localhost:6080 doesn't
+            - "${LOCAL_LISTEN_ADDR}${HOST_NOVNC_CHROME_SELENIUM:-6082}:26080"
+        networks:
+            app_net:
+                ipv4_address: 172.16.238.152
+        volumes:
+            - /dev/shm:/dev/shm
+        privileged: true
+        environment:
+            - NOVNC=true
+            - SELENIUM_HUB_HOST=${HOST_NAME_SELENIUM:-selenium-hub}
+            - SELENIUM_HUB_PORT=${HOST_PORT_SELENIUM:-4444}
+            - SELENIUM_NODE_HOST={{CONTAINER_IP}}
+            - SCREEN_WIDTH=${SELENIUM_CLIENT_SCREEN_WIDTH:-1920}
+            - SCREEN_HEIGHT=${SELENIUM_CLIENT_SCREEN_HEIGHT:-1080}
+            - VIDEO=false
+            - GRID=false
+            - CHROME=true
+            - FIREFOX=false
+        depends_on:
+            - selenium-hub
