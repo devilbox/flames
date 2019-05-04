@@ -5,6 +5,8 @@ This section will guide you through getting Selenium integrated into the Devilbo
 **See also**
 
 * [Docker Hub: Selenium](https://hub.docker.com/r/elgalu/selenium)
+* [Docker Selenium GitHub Project](https://github.com/elgalu/docker-selenium)
+* [SeleniumHQ](https://www.seleniumhq.org/)
     
 ## Overview
 
