@@ -40,7 +40,7 @@ must be copied into the root of the Devilbox git directory.
 | noVNC client exposed to | `6082` (can be changed via `.env`)            |  
 | Client Screen Width     | `1920` (can be changed via `.env`)            |  
 | Client Screen Height    | `1080` (can be changed via `.env`)            |  
-| Available at            | `http://localhost:5902`                       | 
+| Available at            | `http://localhost:6082`                       | 
 
 
 ### Selenium env variables
