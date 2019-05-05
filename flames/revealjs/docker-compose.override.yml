@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+
+    revealjs:
+        image: agiled/reveal.js-docker:latest
+        hostname: revealjs
+        ports:
+            - "${LOCAL_LISTEN_ADDR}${HOST_PORT_REVEALJS:-8000}:8000"
+            - "${LOCAL_LISTEN_ADDR}35729:35729"
+        networks:
+            app_net:
+                ipv4_address: 172.16.238.130
+        volumes:
+            - ${DEVILBOX_PATH}/data/revealjs:/revealjs/presentations
