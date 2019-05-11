@@ -17,7 +17,7 @@ with many more service and tools.
 
 | Flame | Description |
 |-------|-------------|
-| [elastic](flames/elastic/README.md) | Elastic GUI clients |
+| [elastic](flames/elastic/) | Elastic GUI clients |
 
 
 ## Contributing

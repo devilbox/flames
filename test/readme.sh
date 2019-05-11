@@ -28,7 +28,7 @@ README="${SCRIPTPATH}/../README.md"
 
 
 FLAME_NAME="$( basename ${FLAME} )"
-if grep -Eq "\|\s+\[${FLAME_NAME}\]\(flames/${FLAME_NAME}/README.md\)\s+\|.+\|\$" "${README}"; then
+if grep -Eq "\|\s+\[${FLAME_NAME}\]\(flames/${FLAME_NAME}/\)\s+\|.+\|\$" "${README}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (README)   Table entry found in main README.md\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (README)   Table entry not found in main README.md\n"
@@ -36,6 +36,6 @@ else
 	printf "## Available Flames\n\n"
 	printf "| Flame | Description |\n"
 	printf "|-------|-------------|\n"
-	printf "| [elastic](flames/elastic/README.md) | Elastic GUI clients |\n\n"
+	printf "| [elastic](flames/elastic/) | Elastic GUI clients |\n\n"
 	exit 1
 fi
