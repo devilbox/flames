@@ -1,0 +1,22 @@
+---
+
+###
+### Travis settings
+###
+sudo: required
+
+
+install:
+  # Add more modern repos
+  - while ! sudo apt-get update; do sleep 1; done
+  - while ! sudo apt-get -y install python-software-properties; do sleep 1; done
+  - sudo add-apt-repository -y ppa:brightbox/ruby-ng
+  - sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu/ trusty-backports restricted main universe"
+  # Install dependencies
+  - while ! sudo apt-get update; do sleep 1; done
+  - while ! sudo apt-get -y install shellcheck; do sleep 1; done
+  - while ! sudo pip install yamllint; do sleep 1; done
+
+
+script:
+  - make lint
