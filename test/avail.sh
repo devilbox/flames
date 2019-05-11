@@ -31,6 +31,7 @@ if test -f "${SCRIPTPATH}/../${FLAME}/${MY_FILE}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} found\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} not found in: ${FLAME}\n"
+	printf "Each Devilbox flame requires a well documented README.md\n"
 	exit 1
 fi
 
@@ -39,6 +40,7 @@ if test -f "${SCRIPTPATH}/../${FLAME}/${MY_FILE}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} found\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} not found in: ${FLAME}\n"
+	printf "Each Devilbox flame consists of a docker-compose.override.yml file\n"
 	exit 1
 fi
 
@@ -47,6 +49,7 @@ if test -f "${SCRIPTPATH}/../${FLAME}/${MY_FILE}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} found\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} not found in: ${FLAME}\n"
+	printf "Each Devilbox flame requires a env-example (even if empty) with all available variables\n"
 	exit 1
 fi
 
@@ -55,5 +58,6 @@ if test -f "${SCRIPTPATH}/../${FLAME}/${MY_FILE}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} found\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} not found in: ${FLAME}\n"
+	printf "Each Devilbox flame requires a meta.yml file for automatic parsing of project information\n"
 	exit 1
 fi
