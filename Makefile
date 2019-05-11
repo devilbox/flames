@@ -20,4 +20,7 @@ lint:
 		if ! test/meta.yml.sh $(flame); then \
 			exit 1; \
 		fi; \
+		if ! test/readme.sh $(flame); then \
+			exit 1; \
+		fi; \
 	)
