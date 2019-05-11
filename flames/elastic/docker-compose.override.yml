@@ -2,24 +2,24 @@ version: '2.1'
 
 services:
 
-    dejavu:
-        image: appbaseio/dejavu:${DEJAVU_SERVER:-latest}
-        hostname: dejavu
-        ports:
-            - "${LOCAL_LISTEN_ADDR}${HOST_PORT_ELK_DEJAVU:-1358}:1358"
-        networks:
-            app_net:
-                ipv4_address: 172.16.238.243
-        depends_on:
-            - elastic
+  dejavu:
+    image: appbaseio/dejavu:${DEJAVU_SERVER:-latest}
+    hostname: dejavu
+    ports:
+      - "${LOCAL_LISTEN_ADDR}${HOST_PORT_ELK_DEJAVU:-1358}:1358"
+    networks:
+      app_net:
+        ipv4_address: 172.16.238.243
+    depends_on:
+      - elastic
 
-    mirage:
-        image: appbaseio/mirage:${MIRAGE_SERVER:-latest}
-        hostname: mirage
-        ports:
-            - "${LOCAL_LISTEN_ADDR}${HOST_PORT_ELK_MIRAGE:-3030}:3030"
-        networks:
-            app_net:
-                ipv4_address: 172.16.238.244
-        depends_on:
-            - elastic
+  mirage:
+    image: appbaseio/mirage:${MIRAGE_SERVER:-latest}
+    hostname: mirage
+    ports:
+      - "${LOCAL_LISTEN_ADDR}${HOST_PORT_ELK_MIRAGE:-3030}:3030"
+    networks:
+      app_net:
+        ipv4_address: 172.16.238.244
+    depends_on:
+      - elastic
