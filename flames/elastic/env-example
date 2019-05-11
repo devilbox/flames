@@ -1,0 +1,34 @@
+
+################################################################################
+###
+### 11. Elastic GUI clients
+###
+################################################################################
+
+###
+### Choose DejaVu Server Image
+###
+#DEJAVU_SERVER=3.2.0
+#DEJAVU_SERVER=3.2.1
+#DEJAVU_SERVER=3.2.2
+#DEJAVU_SERVER=3.2.3
+DEJAVU_SERVER=latest
+
+###
+### Expose DejaVu Port to Host
+###
+HOST_PORT_ELK_DEJAVU=1358
+
+###
+### Choose Mirage Server Image
+###
+#MIRAGE_SERVER=0.8.0
+#MIRAGE_SERVER=0.9.0
+#MIRAGE_SERVER=0.10.1
+#MIRAGE_SERVER=0.10.2
+MIRAGE_SERVER=latest
+
+###
+### Expose Mirage Port to Host
+###
+HOST_PORT_ELK_MIRAGE=3030

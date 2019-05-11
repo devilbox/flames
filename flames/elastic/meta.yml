@@ -1,0 +1,12 @@
+---
+
+devilbox_info:
+    name: elastic
+    description: GUI for Elasticsearch
+    author: "Laurent Laville"
+    github: llaville
+    license: MIT
+    min_devilbox_version: v1.0.1
+    tags:
+        - elastic
+        - GUI
