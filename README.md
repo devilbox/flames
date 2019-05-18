@@ -18,6 +18,8 @@ with many more service and tools.
 | Flame | Description |
 |-------|-------------|
 | [elastic](flames/elastic/) | Elastic GUI clients |
+| [selenium](flames/selenium/) | Selenium is a portable framework for testing web applications |
+| [swaggerapi](flames/swaggerapi/) | Swagger is a framework that helps developers design, build, document, and consume RESTful Web services |
 
 
 ## Contributing
