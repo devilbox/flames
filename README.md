@@ -18,6 +18,7 @@ with many more service and tools.
 | Flame | Description |
 |-------|-------------|
 | [elastic](flames/elastic/) | Elastic GUI clients |
+| [revealjs](flames/revealjs/) | The HTML Presentation Framework |
 | [selenium](flames/selenium/) | Selenium is a portable framework for testing web applications |
 | [swaggerapi](flames/swaggerapi/) | Swagger is a framework that helps developers design, build, document, and consume RESTful Web services |
 
