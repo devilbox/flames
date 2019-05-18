@@ -1,0 +1,25 @@
+version: '2.1'
+
+services:
+
+    swagger-ui:
+        image: swaggerapi/swagger-ui:${SWAGGER_UI_SERVER:-latest}
+        hostname: swagger-ui
+        ports:
+            - "${LOCAL_LISTEN_ADDR}${HOST_PORT_SWAGGER_UI:-8120}:8080"
+        networks:
+            app_net:
+                ipv4_address: 172.16.238.120
+        depends_on:
+            - httpd
+
+    swagger-editor:
+        image: swaggerapi/swagger-editor:${SWAGGER_EDITOR_SERVER:-latest}
+        hostname: swagger-editor
+        ports:
+            - "${LOCAL_LISTEN_ADDR}${HOST_PORT_SWAGGER_EDITOR:-8121}:8080"
+        networks:
+            app_net:
+                ipv4_address: 172.16.238.121
+        depends_on:
+            - httpd
