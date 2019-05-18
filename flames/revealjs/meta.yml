@@ -1,13 +1,13 @@
 ---
 
 devilbox_info:
-    name: revealjs
-    description: A framework for easily creating beautiful presentations using HTML
-    author: "Laurent Laville"
-    github: llaville
-    license: MIT
-    min_devilbox_version: v1.0.1
-    tags:
-        - revealjs
-        - slides
-        - presentations
+  name: revealjs
+  description: A framework for easily creating beautiful presentations using HTML
+  author: "Laurent Laville"
+  github: llaville
+  license: MIT
+  min_devilbox_version: v1.0.1
+  tags:
+    - revealjs
+    - slides
+    - presentations
