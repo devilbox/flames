@@ -26,7 +26,7 @@ CLR_RST="\033[m"       # Reset to normal
 ### Test files for validity
 ###
 
-if yamllint -c ${SCRIPTPATH}/../.yamllint "${SCRIPTPATH}/../${FLAME}/docker-compose.override.yml"; then
+if yamllint -c ${SCRIPTPATH}/../.yamllint "${SCRIPTPATH}/../${FLAME}docker-compose.override.yml"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (valid)    ${CLR_TEST}docker-compose.override.yml${CLR_RST}\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (valid)    ${CLR_TEST}docker-compose.override.yml${CLR_RST} invalid\n"
@@ -34,7 +34,7 @@ else
 	exit 1
 fi
 
-if yamllint -c ${SCRIPTPATH}/../.yamllint "${SCRIPTPATH}/../${FLAME}/meta.yml"; then
+if yamllint -c ${SCRIPTPATH}/../.yamllint "${SCRIPTPATH}/../${FLAME}meta.yml"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (valid)    ${CLR_TEST}meta.yml${CLR_RST}\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (valid)    ${CLR_TEST}meta.yml${CLR_RST} invalid\n"
@@ -42,7 +42,7 @@ else
 	exit 1
 fi
 
-if shellcheck -e 'SC2034,SC2148' "${SCRIPTPATH}/../${FLAME}/env-example"; then
+if shellcheck -e 'SC2034,SC2148' "${SCRIPTPATH}/../${FLAME}env-example"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (valid)    ${CLR_TEST}env-example${CLR_RST}\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (valid)    ${CLR_TEST}env-example${CLR_RST} invalid\n"

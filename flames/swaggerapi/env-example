@@ -1,0 +1,31 @@
+
+################################################################################
+###
+### 11. Swagger API
+###
+################################################################################
+
+###
+### Choose Swagger-UI Server Image
+###
+### The v3.x tag series supports the Swagger / OpenAPI Specification 2.0 only. If you need 1.x support, please use the 2.x series.
+###
+#SWAGGER_UI_SERVER=3.6.28
+SWAGGER_UI_SERVER=latest
+
+###
+### Expose Swagger-UI Port to Host
+###
+HOST_PORT_SWAGGER_UI=8120
+
+###
+### Choose Swagger-Editor Server Image
+###
+#SWAGGER_EDITOR_SERVER=3.22.0
+#SWAGGER_EDITOR_SERVER=3.22.1
+SWAGGER_EDITOR_SERVER=latest
+
+###
+### Expose Swagger Editor Port to Host
+###
+HOST_PORT_SWAGGER_EDITOR=8121

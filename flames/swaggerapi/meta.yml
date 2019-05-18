@@ -1,11 +1,12 @@
 ---
 
 devilbox_info:
-  name: selenium
-  description: Docker images for Selenium Grid Server (Standalone, Hub, and Nodes)
+  name: swagger
+  description: Swagger-API tools
   author: "Laurent Laville"
   github: llaville
   license: MIT
   min_devilbox_version: v1.0.1
   tags:
-    - selenium
+    - swagger
+    - OpenAPI
