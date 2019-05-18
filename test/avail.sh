@@ -27,7 +27,7 @@ CLR_RST="\033[m"       # Reset to normal
 ###
 
 MY_FILE="README.md"
-if test -f "${SCRIPTPATH}/../${FLAME}/${MY_FILE}"; then
+if test -f "${SCRIPTPATH}/../${FLAME}${MY_FILE}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} found\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} not found in: ${FLAME}\n"
@@ -36,7 +36,7 @@ else
 fi
 
 MY_FILE="docker-compose.override.yml"
-if test -f "${SCRIPTPATH}/../${FLAME}/${MY_FILE}"; then
+if test -f "${SCRIPTPATH}/../${FLAME}${MY_FILE}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} found\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} not found in: ${FLAME}\n"
@@ -45,7 +45,7 @@ else
 fi
 
 MY_FILE="env-example"
-if test -f "${SCRIPTPATH}/../${FLAME}/${MY_FILE}"; then
+if test -f "${SCRIPTPATH}/../${FLAME}${MY_FILE}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} found\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} not found in: ${FLAME}\n"
@@ -54,7 +54,7 @@ else
 fi
 
 MY_FILE="meta.yml"
-if test -f "${SCRIPTPATH}/../${FLAME}/${MY_FILE}"; then
+if test -f "${SCRIPTPATH}/../${FLAME}${MY_FILE}"; then
 	printf "${CLR_OK}[OK]${CLR_RST}  (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} found\n"
 else
 	printf "${CLR_ERR}[ERR]${CLR_RST} (avail)    ${CLR_TEST}${MY_FILE}${CLR_RST} not found in: ${FLAME}\n"

@@ -26,7 +26,7 @@ CLR_RST="\033[m"       # Reset to normal
 ### Test files for availability
 ###
 MY_FILE="meta.yml"
-MY_PATH="${SCRIPTPATH}/../${FLAME}/${MY_FILE}"
+MY_PATH="${SCRIPTPATH}/../${FLAME}${MY_FILE}"
 
 
 if grep -Eq '^devilbox_info:$' "${MY_PATH}"; then
