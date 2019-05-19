@@ -20,7 +20,7 @@ must be copied into the root of the Devilbox git directory.
 | ----------- | ------------- |
 | Example compose file  | `compose/docker-compose.override.yml-swagger-api` | 
 
-**DejaVu**
+**Swagger-UI**
 
 | What        | How and where |
 | ----------- | ------------- |
@@ -31,7 +31,7 @@ must be copied into the root of the Devilbox git directory.
 | Exposed port          | `8120` (can be changed via `.env`) |  
 | Available at          | `http://localhost:8120`            | 
 
-**Mirage**
+**Swagger-Editor**
 
 | What        | How and where |
 | ----------- | ------------- |
