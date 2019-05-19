@@ -18,7 +18,7 @@ must be copied into the root of the Devilbox git directory.
 | ----------- | ------------- |
 | Example compose file  | `compose/docker-compose.override.yml-revealjs` | 
 
-**DejaVu**
+**Reveal.js**
 
 | What        | How and where |
 | ----------- | ------------- |
