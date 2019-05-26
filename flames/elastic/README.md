@@ -13,16 +13,16 @@ This section will guide you through getting Elastic GUI clients integrated into 
 
 ### DejaVu and Mirage settings
 
-In case of Elastic, the file is `compose/docker-compose.override.yml-elastic-gui`. This file
+In case of Elastic, the file is `flames/elastic/docker-compose.override.yml`. This file
 must be copied into the root of the Devilbox git directory.
     
-You also need the ELK stack. The file is `compose/docker-compose.override.yml-elastic` 
+You also need the ELK stack. The file is `compose/docker-compose.override.yml-elk` 
 must be copied in the root of the Devilbox git directory.
     
 | What        | How and where |
 | ----------- | ------------- |
-| Example compose file  | `compose/docker-compose.override.yml-elastic-gui` | 
-| Example compose file  | `compose/docker-compose.override.yml-elastic` | 
+| Example compose file  | `flames/elastic/docker-compose.override.yml`  | 
+| Example compose file  | `compose/docker-compose.override.yml-elk`     | 
 
 **DejaVu**
 
