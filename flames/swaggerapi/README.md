@@ -13,12 +13,12 @@ This section will guide you through getting Swagger API integrated into the Devi
 
 ### Swagger-UI and Swagger-Editor settings
 
-In case of SwaggerAPI, the file is `compose/docker-compose.override.yml-swagger-api`. This file
+In case of SwaggerAPI, the file is `flames/swaggerapi/docker-compose.override.yml`. This file
 must be copied into the root of the Devilbox git directory.
     
 | What        | How and where |
 | ----------- | ------------- |
-| Example compose file  | `compose/docker-compose.override.yml-swagger-api` | 
+| Example compose file  | `flames/swaggerapi/docker-compose.override.yml` | 
 
 **Swagger-UI**
 

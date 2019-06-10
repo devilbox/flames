@@ -11,12 +11,12 @@ This section will guide you through getting Reveal.js integrated into the Devilb
 
 ### Reveal.js settings
 
-In case of Reveal.js, the file is `compose/docker-compose.override.yml-revealjs`. This file
+In case of Reveal.js, the file is `flames/revealjs/docker-compose.override.yml`. This file
 must be copied into the root of the Devilbox git directory.
     
 | What        | How and where |
 | ----------- | ------------- |
-| Example compose file  | `compose/docker-compose.override.yml-revealjs` | 
+| Example compose file  | `flames/revealjs/docker-compose.override.yml` | 
 
 **Reveal.js**
 

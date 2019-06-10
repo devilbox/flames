@@ -12,12 +12,12 @@ This section will guide you through getting Selenium integrated into the Devilbo
 
 ### Selenium settings
 
-In case of Selenium, the file is ``compose/docker-compose.override.yml-selenium``. This file
+In case of Selenium, the file is `flames/selenium/docker-compose.override.yml`. This file
 must be copied into the root of the Devilbox git directory.
     
 | What        | How and where |
 | ----------- | ------------- |
-| Example compose file  | `compose/docker-compose.override.yml-selenium` | 
+| Example compose file  | `flames/selenium/docker-compose.override.yml` | 
 
 **Selenium Hub**
 
