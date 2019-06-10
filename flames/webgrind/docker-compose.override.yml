@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+
+  webgrind:
+    # https://hub.docker.com/r/creativeprojects/webgrind
+    image: creativeprojects/webgrind:${WEBGRIND_SERVER:-latest}
+    ports:
+      - "${LOCAL_LISTEN_ADDR}${HOST_PORT_WEBGRIND:-8180}:80"
+    networks:
+      app_net:
+        ipv4_address: 172.16.238.180
+    volumes:
+      - ${DEVILBOX_PATH}/log/php-fpm-${PHP_SERVER}:/tmp/xdebug

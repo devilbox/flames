@@ -1,0 +1,18 @@
+
+################################################################################
+###
+### 11. Webgrind GUI
+###
+################################################################################
+
+###
+### Choose Webgrind Server Image
+###
+#WEBGRIND_SERVER=1.4.0
+#WEBGRIND_SERVER=1.5.0
+WEBGRIND_SERVER=latest
+
+###
+### Expose Webgrind to Host
+###
+HOST_PORT_WEBGRIND=8180
